@@ -43,14 +43,15 @@ class MainPage extends Component {
              Next to move: {this.state.nextFigure}
             </div>
           </div>
-          {this.state.won === 'circle' || this.state.won === 'x' || this.state.won === 'draw' ? (
-            <div className={styles.winner}>
-              <div className={styles.textInfo}> Winner: {this.state.won} </div>
-              <button onClick={() => this.resetGame()} className={styles.resetButton}> Reset </button>
-            </div>
-          ) : (
-            <div> </div>
-          )}
+          <div className={styles.winner}>
+            {this.state.won === 'circle' || this.state.won === 'x' || this.state.won === 'draw' ? (
+
+                <div className={styles.textInfo}> Winner: {this.state.won} </div>
+            ) : (
+              <div> </div>
+            )}
+            <button onClick={() => this.resetGame()} className={styles.resetButton}> Reset </button>
+          </div>
         </div>
         <div className={styles.gameContainer}>
           <Row index={0} nextFigure={this.state.nextFigure} makeMove={this.makeMove} gameState={this.state.gameState} />

@@ -19,6 +19,10 @@
   background-image: url('../../assets/images/x.png');
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .oTile {
@@ -27,6 +31,7 @@
   background-image: url('../../assets/images/circle.png');
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
