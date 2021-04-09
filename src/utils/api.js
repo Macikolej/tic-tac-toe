@@ -1,7 +1,7 @@
 import ky from 'ky';
 
 const apiClient = ky.create({
-  prefixUrl: 'http://superiod.online:3001',
+  prefixUrl: 'https://tic-tac-toe-macikolej-server.herokuapp.com/',
 });
 
 export const apiFetchGameState = () => (
